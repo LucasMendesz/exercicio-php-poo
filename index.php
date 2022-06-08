@@ -13,7 +13,7 @@
     <?php
     // Importando a classe
 
-    require_once "src/Classe.php";
+    require_once "src/Livro.php";
 
     // Criação dos objetos
 
@@ -23,13 +23,13 @@
 
     $livro->setTitulo("Pai rico Pai pobre");
     $livro->setAutor("Robert T. Kiyosaki");
-    $livro->setPaginas(0);
+    $livro->setPaginas(300);
     ?>
 
     <h2>Dados do objetos(leitura via getters)</h2>
-    <h3> <?=$livro->getTitulo()?> </h3>
-    <h3> <?=$livro->getAutor()?> </h3>
-    <h3> <?=$livro->getPaginas()?> </h3>
+    <h3>Nome do livro: <?=$livro->getTitulo()?> </h3>
+    <p>Nome do autor: <?=$livro->getAutor()?> </p>
+    <p>Quantidade de páginas: <?=$livro->getPaginas()?> </p>
     
     
 </body>
