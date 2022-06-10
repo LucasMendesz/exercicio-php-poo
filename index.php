@@ -14,6 +14,9 @@
     // Importando a classe
 
     require_once "src/Livro.php";
+    require_once "src/tecnico.php";
+    require_once "src/Programacao.php";
+    require_once "src/Didatico.php";
 
     // Criação dos objetos
 
@@ -24,12 +27,35 @@
     $livro->setTitulo("Pai rico Pai pobre");
     $livro->setAutor("Robert T. Kiyosaki");
     $livro->setPaginas(300);
+
+
+    $tecnico = new Tecnico;
+
+    $tecnico->setFormato(["Digital"]);
+
+    $programacao = new Programacao;
+
+    $programacao->setArea("Web");
+
+    $didatico = new Didatico;
+
+    $didatico->setDisciplina("Matématica");
+    $didatico->setNivel(["Ensino médio"]);
+
     ?>
 
     <h2>Dados do objetos(leitura via getters)</h2>
     <h3>Nome do livro: <?=$livro->getTitulo()?> </h3>
-    <p>Nome do autor: <?=$livro->getAutor()?> </p>
-    <p>Quantidade de páginas: <?=$livro->getPaginas()?> </p>
+    <p> <strong> Nome do autor: </strong> <?=$livro->getAutor()?> </p>
+    <p> <strong> Quantidade de páginas: </strong> <?=$livro->getPaginas()?> </p>
+
+
+
+    <p> <strong> Formato:</strong> <?=implode(", ", $tecnico->getFormato())?></p>
+    <p>  <strong> Área: </strong>  <?=$programacao->getArea()?> </p>
+    <p>  <strong>  Disciplina: </strong> <?=$didatico->getDisciplina()?> </p>
+    <p> <strong>   Nível: </strong> <?=implode(", ", $didatico->getNivel())?></p>
+
     
     
 </body>
