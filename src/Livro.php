@@ -1,4 +1,5 @@
 <?php
+require_once "src/Livro.php";
 class Livro {
     private string $titulo;
     private string $autor;

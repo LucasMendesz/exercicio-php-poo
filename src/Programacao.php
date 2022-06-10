@@ -1,10 +1,9 @@
 <?php
-
+require_once "Tecnico.php";
 class Programacao {
     private string $area;
     
 
-    
     public function getArea(): string
     {
         return $this->area;
@@ -16,7 +15,6 @@ class Programacao {
 
     }
 }
-
 
 
 ?>

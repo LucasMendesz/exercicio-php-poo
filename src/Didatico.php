@@ -2,7 +2,7 @@
 
 class Didatico {
     private string $disciplina;
-    private array  $nivel;
+    private array  $nivel = ["Básico", "Médio", "Superior"];
 
   
     public function getDisciplina(): string

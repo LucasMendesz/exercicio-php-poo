@@ -13,7 +13,7 @@
     <?php
     // Importando a classe
 
-    require_once "src/Livro.php";
+    //require_once "src/Livro.php";
     require_once "src/tecnico.php";
     require_once "src/Programacao.php";
     require_once "src/Didatico.php";
@@ -29,20 +29,24 @@
     $livro->setPaginas(300);
 
 
+    // Obejto tecnico
     $tecnico = new Tecnico;
-
+    $tecnico->setAutor("José ferreira da silva");
     $tecnico->setFormato(["Digital"]);
 
+    // P
     $programacao = new Programacao;
-
     $programacao->setArea("Web");
 
+    // D
     $didatico = new Didatico;
-
     $didatico->setDisciplina("Matématica");
     $didatico->setNivel(["Ensino médio"]);
 
     ?>
+
+<pre> <?=var_dump($livro, $tecnico, $programacao, $didatico)?></pre>
+
 
     <h2>Dados do objetos(leitura via getters)</h2>
     <h3>Nome do livro: <?=$livro->getTitulo()?> </h3>
@@ -50,9 +54,11 @@
     <p> <strong> Quantidade de páginas: </strong> <?=$livro->getPaginas()?> </p>
 
 
+    <p> <strong>Nome do autor: <?=$tecnico->getNome()?> </strong></p>
+    <p> <strong> Formato:</strong> <?=$tecnico->getFormato()?></p>
 
-    <p> <strong> Formato:</strong> <?=implode(", ", $tecnico->getFormato())?></p>
     <p>  <strong> Área: </strong>  <?=$programacao->getArea()?> </p>
+    
     <p>  <strong>  Disciplina: </strong> <?=$didatico->getDisciplina()?> </p>
     <p> <strong>   Nível: </strong> <?=implode(", ", $didatico->getNivel())?></p>
 
