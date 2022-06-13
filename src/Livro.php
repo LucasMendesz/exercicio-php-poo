@@ -1,6 +1,5 @@
 <?php
-require_once "src/Livro.php";
-class Livro {
+ abstract class Livro {
     private string $titulo;
     private string $autor;
     private int $paginas = 0;

@@ -1,10 +1,11 @@
 <?php
-
-class Didatico {
+class Didatico extends Programacao {
+    
     private string $disciplina;
     private array  $nivel = ["Básico", "Médio", "Superior"];
 
-  
+    
+
     public function getDisciplina(): string
     {
         return $this->disciplina;
@@ -14,13 +15,11 @@ class Didatico {
     {
         return $this->nivel;
     }
-
     
     public function setDisciplina(string $disciplina)
     {
         $this->disciplina = $disciplina;
 
-        
     }
 
     
@@ -30,7 +29,35 @@ class Didatico {
 
         
     }
-}
+
+   
+
+   
+   
+
+    
+    
+
+    
+   
+
+  
+   
+   
+   
+
+   
+
+    
+  
+
+  
+  
+
+    
+    
+    }
+
 
 
 ?>
