@@ -4,7 +4,7 @@
     private string $autor;
     private int $paginas = 0;
 
-    public function formataTitulo(string $titulo):string
+    public function formataTitulo():string
     {
         return "<strong>".mb_strtoupper($this->getTitulo())."</strong>";
     }

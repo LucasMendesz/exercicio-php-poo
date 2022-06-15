@@ -4,9 +4,9 @@ class Programacao extends Tecnico{
     private string $area; 
 
 
-    public function formataTitulo(string $titulo):string
+    public function formataTitulo():string
     {
-        return "<i style='color: blue'>".$titulo."</i>";
+        return "<i style='color: blue'>".$this->getTitulo()."</i>";
     }
 
     public function getArea(): string
