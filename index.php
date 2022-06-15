@@ -87,8 +87,15 @@
     <p>  <strong> Formato: </strong>  <?=$didatico->getFormato()?> </p>
     <p>  <strong> disciplina: </strong>  <?=$didatico->getDisciplina()?> </p>
     <p> <strong>   Nível: </strong> <?=implode(", ", $didatico->getNivel())?></p>
+    <hr>
 
+
+    <p> <?=$tecnico->formataTitulo($tecnico->getTitulo())?> </p>
+    <p> <?=$programacao->formataTitulo($programacao->getTitulo())?> </p>
     
-    
+
+
+
+
 </body>
 </html>
