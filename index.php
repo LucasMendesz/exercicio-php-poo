@@ -54,6 +54,9 @@
     $didatico->setDisciplina("Matématica");
     $didatico->setNivel(["Superior"]);
 
+    // Objeto Web
+    $livroWeb = new Project\Web;
+
     ?>
 
 <pre> <?=var_dump($tecnico, $programacao, $didatico)?></pre>
