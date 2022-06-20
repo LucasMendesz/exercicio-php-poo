@@ -1,4 +1,5 @@
 <?php
+namespace Project;
 class Didatico extends Programacao {
     
     private string $disciplina;

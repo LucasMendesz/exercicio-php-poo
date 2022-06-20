@@ -1,4 +1,6 @@
 <?php
+
+namespace Project;
  abstract class Livro {
     private string $titulo;
     private string $autor;

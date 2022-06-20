@@ -13,11 +13,11 @@
     <?php
     // Importando a classe
 
-    //require_once "src/Livro.php";
-    require_once "src/tecnico.php"; // Subclasse
-    require_once "src/Programacao.php"; // Subclasse
-    require_once "src/Didatico.php"; // Subclasse
-
+    // //require_once "src/Livro.php";
+    // require_once "src/tecnico.php"; // Subclasse
+    // require_once "src/Programacao.php"; // Subclasse
+    // require_once "src/Didatico.php"; // Subclasse
+ require_once "vendor/autoload.php";
     // Criação dos objetos
 
     //$livro = new Livro;
@@ -29,15 +29,16 @@
     // $livro->setPaginas(300);
 
 
+
     // Obejto Técnico
-    $tecnico = new Tecnico;
+    $tecnico = new Project\Tecnico;
     $tecnico->setTitulo("HTML5");
     $tecnico->setAutor("José ferreira da silva");
     $tecnico->setPaginas(155);
     $tecnico->setFormato(["Digital"]);
 
     // Objeto Programação
-    $programacao = new Programacao;
+    $programacao = new Project\Programacao;
     $programacao->setTitulo("PHP 8");
     $programacao->setAutor("Francisco da silva");
     $programacao->setPaginas(266);
@@ -45,7 +46,7 @@
     $programacao->setArea("Web");
 
     // Objeto Didático
-    $didatico = new Didatico;
+    $didatico = new Project\Didatico;
     $didatico->setTitulo("CSS3");
     $didatico->setAutor("Lucas Mendes de Araujo");
     $didatico->setPaginas(65);
