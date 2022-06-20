@@ -28,17 +28,19 @@
     // $livro->setAutor("Robert T. Kiyosaki");
     // $livro->setPaginas(300);
 
+    use Project\ {Tecnico, Programacao, Didatico};
+
 
 
     // Obejto Técnico
-    $tecnico = new Project\Tecnico;
+    $tecnico = new Tecnico;
     $tecnico->setTitulo("HTML5");
     $tecnico->setAutor("José ferreira da silva");
     $tecnico->setPaginas(155);
     $tecnico->setFormato(["Digital"]);
 
     // Objeto Programação
-    $programacao = new Project\Programacao;
+    $programacao = new Programacao;
     $programacao->setTitulo("PHP 8");
     $programacao->setAutor("Francisco da silva");
     $programacao->setPaginas(266);
@@ -46,7 +48,7 @@
     $programacao->setArea("Web");
 
     // Objeto Didático
-    $didatico = new Project\Didatico;
+    $didatico = new Didatico;
     $didatico->setTitulo("CSS3");
     $didatico->setAutor("Lucas Mendes de Araujo");
     $didatico->setPaginas(65);
